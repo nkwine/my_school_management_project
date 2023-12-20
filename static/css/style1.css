@@ -1,0 +1,31 @@
+.mylog1{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    padding: 10% 15% 23% 35%;
+    
+
+}
+.mylog{
+    background-color: khaki ;
+    width: 50%;
+    height: 50%;
+    padding: 5% 0% 5% 5%;
+    border-radius: 3%;
+    
+   
+}
+.iconl{
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    text-align: center;
+    padding-top: 5%;
+}
+.iconi{
+    
+    margin-bottom: 0%;
+}
+.in{
+    padding-left: 20%;
+}

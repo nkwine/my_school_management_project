@@ -1,0 +1,95 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'fonts/css/all.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style2.css' %}">   
+	<title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+	<div class="mainwrapper"></div>
+		<!-- sidenav starts-->
+		<div class="sidenav" id="mysidenave">
+			<div class="sidebarheader">
+				<p class="logo"><span> <img src="{% static 'images/client.png' %}" class="pro-img"> </span>My School</p>	
+			</div>
+			<div class="sidenavcontent">
+				<ul>
+					<li> <a href="home" class="anc"><i class="fa fa-dashboard icon"></i>&nbsp;&nbsp;Dashboard</a> </li>
+					<li> <a href="#" class="anc dropdown-toggle" id="drop"><i class="fa fa-users icon"></i>&nbsp;&nbsp;Users</a>
+						<ul class="drop1" id="drop1">
+							<li><a href="{% url 'mstudents' %}">Students</a></li>
+							<li><a href="{% url 'mteachers' %}">Teachers</a></li>
+							<li><a href="{% url 'mdos' %}">D.O.S</a></li>
+							<li><a href="{% url 'madministrators' %}">Administrators</a></li>
+							<li><a href="{% url 'mbursar' %}">Barsur </a></li>
+							<li><a href="{% url 'msecretary' %}">Secretary </a></li>
+						</ul>
+					</li>
+					<li> <a href="#" class="anc"><i class="fa fa-tasks icon"></i>&nbsp;&nbsp;Events</a></li>
+					<li> <a href="#" class="anc"><i class="fa fa-list icon"></i>&nbsp;&nbsp;News</a></li>
+					
+				</ul>
+			</div>
+			
+		</div>
+		<!-- sidenav starts-->
+		<!-- mainbody starts-->
+		<div class="main" id="main">
+		<!-- mainbodyheader starts-->
+			<div class="bodyheader">
+				<div class="col-div-1" >
+					<span style="font-size: 30px; cursor: pointer; color: white;" class="nav">&#9776; </span>
+					<span style="font-size: 30px; cursor: pointer; color: white;" class="nav2">&#9776; </span>
+				</div>
+				<div class="col-div-2" >
+					<span style="font-size: 30px; cursor: pointer; color: white;" >School Management System</span>
+					
+				</div>
+				<div class="col-div-3" >
+					<span style="font-size: 20px; cursor: pointer; color: white;" >
+						<a href="#"><i class="fa fa-bell coi" id="notification"></i></a>  <a href="#"> <i class="fa fa-message coi"></i></a>  Nkwine Innocent|Admin <img src="{% static 'images/client.png' %}" class="pro-img1"> <i class="fa fa-user me-1  coi"></i>
+					</span>
+				</div>
+				<div class="clearfix"></div>
+				
+			</div>
+			<!-- mainbodyheader ends-->
+			<!-- mainbodycontent starts-->
+			<div class="frow">
+				<div class="row ">
+					<div class="col-md-4">
+						<p>{% block left %}{% endblock %}</p>
+						
+					</div>
+					<div class="col-md-4">
+						<form class="form-inline" role="form">
+							<div class="form-group d-flex">
+							
+								
+								{% block cente %}{% endblock %}
+											
+							</div>
+						</form>						
+					</div>
+					<div class="col-md-4 sidep">
+						 {% block right %}{% endblock %}
+
+						
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			{% block content %}
+	{% endblock %}
+
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>	
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<script src="{% static 'js/js.js' %}"></script>
+	
+</body>
+</html>

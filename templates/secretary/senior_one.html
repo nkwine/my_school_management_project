@@ -1,0 +1,118 @@
+{% extends 'secretary/main.html' %}
+{% block title %}School Management System{% endblock %}
+{% block left %}Secretary{% endblock %}
+{% block cente %}search{% endblock %}
+{% block right %}<p > <a href="#">home </a></p>{% endblock %}
+{% block content %}
+<div class="frow1">
+    <div class="myfbutton1">
+        <div style="float: left; width :75%"><p style="margin-left: 45%;">The teachers table</p></div>
+        <div class="mybutton">
+            <button type="button" class="btn btn-success " style="float: right;"> <i class="fa fa-add"></i> Add ateacher</button>
+        </div>
+        <div class="clearfix"></div>
+   </div>
+       
+        <div class="myfbutton" >
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>First Name</th>
+                            <th>Last name</th>
+                            <th>Class</th>
+                            <th>Contact</th>
+                            <th>Parent name</th>
+                            <th>Parent contact</th>
+                            <th>Parent email</th>
+                            <th>username</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td>Product1</td>
+                    <td>23/11/2013</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    <td>23/11/2013</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    <td>Product1</td>
+                    <td>Product1</td >
+                    
+                    <td style="padding: 1% 0% 1% 0%;text-align: center;"> <span style="width: 100%; "><a href="#"><button class="btn btn-primary" style="font-size: 7px;"><i class="fa fa-edit"></i></button></a> <a href="#"><button class="btn btn-danger" style="font-size: 7px;"><i class="fa fa-trash"></i></button></a></span></td>
+                    
+                    </tr>
+                    <tr>
+                    <td>Product2</td>
+                    <td>10/11/2013</td>
+                    <td>Delivered</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    <td>23/11/2013</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    <td>Product1</td>
+                    <td>Product1</td>
+                    
+                   
+                
+                    
+                    </tr>
+                    <tr>
+                    <td>Product3</td>
+                    <td>20/10/2013</td>
+                    <td>In Call to confirm</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    <td>23/11/2013</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    <td>Product1</td>
+                    <td>Product1</td>
+                   
+                   
+                    
+                    
+                    </tr>
+                    <tr>
+                    <td>Product4</td>
+                    <td>20/10/2013</td>
+                    <td>Declined</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    <td>23/11/2013</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    <td>Product1</td>
+                    <td>Product1</td>
+                  
+                   
+                
+                    
+                    </tr>
+                    </tbody>
+                </table>
+           </div>
+        
+    </div>
+</div>
+<div class="col-md-6 offset-md-3 trform" >
+    <p class="par">Fill the form to regester a new student</p>
+        
+        <form class="form-horizontal" method="post" action="{% url 'rgteacher' %}" >
+            
+            {% csrf_token %}
+        {{ form.as_p }}
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-secondary">Register</button>
+            </div>
+            </div>
+        </form>
+ 
+</div>
+
+{% endblock %}

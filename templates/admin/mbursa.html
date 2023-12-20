@@ -1,0 +1,90 @@
+{% extends 'admin/main.html' %}
+{% block title %}Bursar {% endblock %}
+{% block left %} <b>Bursar</b> {% endblock %}
+{% block cente %}
+<input class="form-control"  type="text" name="search" placeholder="search">
+<button type="button" class="btn btn-primary">Search</button>
+{% endblock %}
+{% block right %}<p ><a href="home">Home</a>/ Bursar</p>{% endblock %}
+{% block content %}
+<div class="frow1">
+    <div class="myfbutton1">
+        <div style="float: left; width :75%"><p style="margin-left: 45%;">The bursa table</p></div>
+        <div class="mybutton">
+            <a href="bursar_registration"><button type="button" class="btn btn-success " style="float: right;"> <i class="fa fa-add"></i> Add a Bursar</button></a>
+        </div>
+        <div class="clearfix"></div>
+   </div>
+       
+        <div class="myfbutton" >
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Select</th>
+                            <th>id</th>
+                            <th>First Name</th>
+                            <th>Last name</th>
+                            <th>Department</th>
+                            <th>Email</th>
+                            <th>username</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td>Product1</td>
+                    <td>23/11/2013</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    <td>23/11/2013</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    <td> <a href="#"><button class="btn btn-primary"><i class="fa fa-edit"></i></button></a> <a href="#"><button class="btn btn-danger"><i class="fa fa-trash"></i></button></a></td>
+                    
+                    </tr>
+                    <tr>
+                    <td>Product2</td>
+                    <td>10/11/2013</td>
+                    <td>Delivered</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    <td>23/11/2013</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                
+                    
+                    </tr>
+                    <tr>
+                    <td>Product3</td>
+                    <td>20/10/2013</td>
+                    <td>In Call to confirm</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    <td>23/11/2013</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    
+                    
+                    </tr>
+                    <tr>
+                    <td>Product4</td>
+                    <td>20/10/2013</td>
+                    <td>Declined</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    <td>23/11/2013</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                
+                    
+                    </tr>
+                    </tbody>
+                </table>
+           </div>
+        
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{%  extends 'admin/main.html' %}
+{%  load static %}
+{% block title %}Dos registration{% endblock %}
+{% block right %}<p ><a href="home">Home</a>/ <a href="{% url 'mdos' %}">D.O.S</a>/Regiter</p>{% endblock %}
+{% block cente %}
+<p class="par">Fill the form to register a new d.o.s</p>
+{% endblock %}
+{% block content %}
+<div class="col-md-6 offset-md-3 trform" >
+    
+        
+        <form class="form-horizontal" method="post" action="dos_registration" enctype="multipart/form-data" >
+            {% csrf_token %}
+            {% if form1.errors%}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                Your form1 has errors
+                {% for field in form1 %}
+                {% if field.errors %}
+                {{ field.errors }}
+                {% endif %}
+                {% endfor %}
+
+            </div>
+            {% elif form2.errors%}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                Your form2 has errors
+                {% for field in form2 %}
+                {% if field.errors %}
+                {{ field.errors }}
+                {% endif %}
+                {% endfor %}
+
+            </div>
+            {% endif %}
+            
+            {{ form1.as_p }}
+            {{ form2.as_p }}
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-secondary">Register</button>
+                </div>
+            </div>
+        </form>
+ 
+</div>
+{% endblock %}

@@ -1,0 +1,203 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: antiquewhite;
+	overflow: auto;
+	font-family: system-ui;
+}
+.footer{
+	margin-top: 4%;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	margin-bottom: 2%;
+	margin-left: 4%;
+}
+.mainwrapper{
+	width: 100%;
+	height: 100%;
+
+}
+.sidenav{
+	top: 0;
+	left: 0;
+	height: 100%;
+	position: fixed;
+	transition: 0.5s;
+	background-color: #272c4a;
+	overflow-y: auto;
+	width: 18%;
+	z-index: 1;
+	font-size: 30px;
+
+}
+.sidebarheader{
+	margin-top: 0px;
+	margin-bottom: 0p;
+	margin-left: 0p;
+	margin-right: 0px;
+	background-color: saddlebrown;
+	padding: 2% 2% 2% 6%;
+
+	
+}
+.logo{
+	margin-top: 0%;
+	margin-bottom: 0%;
+	
+	
+}
+.logo span{
+
+}
+.pro-img{
+	width: 30%;
+}
+.sidenavcontent{
+	padding: 6% 2% 2% 6%;
+}
+.sidenavcontent ul {
+	list-style-type: none;
+	padding: 0% 0% 0% 0%;
+}
+.sidenavcontent ul li{
+	display: block;
+}
+.sidenavcontent ul li a{
+	display: block;
+	transition: 0.3s;
+	text-decoration: none;
+	font-size: 20px;
+	color: #818181;
+	padding: 2% 2% 2% 2%;
+}
+.sidenavcontent ul li a:hover{
+	color: #f1f1f1;
+	background-color:#1b203d ;
+}
+#drop{
+
+}
+#drop1{
+  margin-left: 30%;
+  display: none;
+  transition: 0.5s ;
+}
+.drop1 li{
+
+}
+.main{
+	transition: margin-left .5s;
+	top: 0;
+	margin-left: 18%;
+	
+}
+.bodyheader{
+	margin-top: 0px;
+	margin-bottom: 0p;
+	margin-left: 0p;
+	margin-right: 0px;
+	background-color: saddlebrown;
+	padding: 2.9% 2% 0px 0%;
+}
+.col-div-1{
+	width: 25%;
+	float: left;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	height: 100%;
+}
+	
+.nav2{
+	display: none;
+}
+.col-div-2{
+	width: 35%;
+	float: left;
+	margin-top: 0%;
+	margin-bottom: 0%;
+}
+	
+.col-div-3{
+
+	width: 40%;
+	float: left;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	text-align: right;
+	
+}
+
+.coi{
+	color: white;
+}
+.pro-img1{
+	width: 40px;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+	
+.frow{
+	padding: 1.5% 2% 0% 0%;;
+	
+}
+.sidep{
+	text-align: right;
+}
+.sidep p{
+	margin-right: 15%;
+}
+.sidep p a{
+	text-decoration: none;
+}
+.frow1{
+	margin-top: 3%;
+	padding: 2% 2% 2% 3%;;
+	
+}
+.box{
+	width: 230px;
+	height: 130px;
+	padding: 2% 2% 2% 2%;;
+	background-color: purple;
+}
+.box p{
+	 margin-bottom:6% ;
+	margin-top: 6%;
+	margin-left: 8%;
+	font-size: 25px!important;
+	color: white;
+}
+.box-i{
+	font-size: 40px!important;
+	color: #818181;
+	float: right;
+	margin-top: 20% !important;
+	margin-right: 8%;
+}
+.myfbutton{
+	width: 100%;
+	background-color: lavender;
+	margin-left:0%;
+}
+.myfbutton1{
+	width: 100%;
+	margin-left:0%;
+}
+.mybutton{
+	float: right;
+	width: 25%;
+}
+.trform{
+	border: 3px  #1b203d;
+	border-radius: 3%;
+	background-color: coral;
+	padding: 3% 3% 3% 3%;
+}
+.par{ 
+  text-align: center;
+}
+.few{
+	font-size: 10px;
+	background-color: aqua;
+}

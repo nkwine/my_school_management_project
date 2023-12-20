@@ -1,0 +1,101 @@
+{% extends 'admin/main.html' %}
+{% block title %}School Management System{% endblock %}
+{% block left %} <b>Support Staff</b> {% endblock %}
+{% block cente %}search{% endblock %}
+{% block right %}<p > <a href="{% url 'home' %}">Home</a>/Supportstaff</p>{% endblock %}
+{% block content %}
+<div class="frow1">
+    <div class="myfbutton1">
+        <div style="float: left; width :75%"><p style="margin-left: 45%;">The support staff table</p></div>
+        <div class="mybutton">
+            <button type="button" class="btn btn-success " style="float: right;"> <i class="fa fa-add"></i> Add staff</button>
+        </div>
+        <div class="clearfix"></div>
+   </div>
+       
+        <div class="myfbutton" >
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Select</th>
+                            <th>id</th>
+                            <th>First Name</th>
+                            <th>Last name</th>
+                            <th>Department</th>
+                            <th>Email</th>
+                            <th>username</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td>Product1</td>
+                    <td>23/11/2013</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    <td>23/11/2013</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    <td> <a href="#"><button class="btn btn-primary"><i class="fa fa-edit"></i></button></a> <a href="#"><button class="btn btn-danger"><i class="fa fa-trash"></i></button></a></td>
+                    
+                    </tr>
+                    <tr>
+                    <td>Product2</td>
+                    <td>10/11/2013</td>
+                    <td>Delivered</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    <td>23/11/2013</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                
+                    
+                    </tr>
+                    <tr>
+                    <td>Product3</td>
+                    <td>20/10/2013</td>
+                    <td>In Call to confirm</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    <td>23/11/2013</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    
+                    
+                    </tr>
+                    <tr>
+                    <td>Product4</td>
+                    <td>20/10/2013</td>
+                    <td>Declined</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                    <td>23/11/2013</td>
+                    <td>Pending</td>
+                    <td>Product1</td>
+                
+                    
+                    </tr>
+                    </tbody>
+                </table>
+           </div>
+        
+    </div>
+</div>
+<div class="col-md-6 offset-md-3 trform" >
+    <p class="par">Fill the form to regester a new support stuff</p>
+        
+        <form class="form-horizontal" method="post" action="{% url 'rgteacher' %}" >
+            
+            {% csrf_token %}
+        {{ form1.as_p }}
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-secondary">Register</button>
+            </div>
+            </div>
+        </form>
+ 
+</div>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Login{% endblock %}
+{% block content %}
+        
+    <div class="mylog1">
+        <div class="mylog">
+            <form class="form-horizontal" role="form" method="post" action="">
+                {% csrf_token %}
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <div class="iconl">
+                        <i class="fa fa-user iconi" ></i>
+                        </div>
+                        <input type="text" class="form-control in" placeholder="username" name="username">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <div class="iconl">
+                            <i class="fa fa-lock iconi" ></i>
+                            </div>
+                        <input type="password" class="form-control in" placeholder="Password" name="password">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-4">
+                        <button type="submit" class="btn btn-secondary">Login</button>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+    {% endblock %}
+    
